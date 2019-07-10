@@ -1,0 +1,1 @@
+Select `autor_id`,`autor`, count(*) from `books` JOIN `autors` USING(`autor_id`) group by `autor_id` HAVING count(*) < 7 
